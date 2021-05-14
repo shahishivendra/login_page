@@ -1,0 +1,240 @@
+*{
+  box-sizing: border-box;
+}
+nav,header,footer{
+  display: block;
+}
+
+body{
+  line-height: 1;
+  margin:0;
+}
+nav{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+label{
+  font-size: 25px;
+  font-family: 'Ubuntu',sans-serif;
+  font-weight: 600;
+}
+p{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.2;
+}
+nav ul{
+  background-color: #DCD7D9;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+nav.topnav ul li{
+  list-style: none;
+  float: left;
+}
+nav.topnav ul li.topnav-right{
+  float:right;
+}
+nav.topnav ul li a{
+  display: block;
+  text-decoration: none;
+  min-height: 20px;
+  font-size:16px;
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+  padding: 10px;
+  color: #666;
+}
+nav.topnav ul li  a:hover{
+  background-color: rgba(179,195,69,1);
+  color: white;
+}
+nav.topnav ul li.dropdown{
+  display: none;
+}
+#main_page{
+  display: none;
+}
+
+.col-1 {width: 8.33%};
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.container{
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+
+}
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row::after{
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.aboutme{
+  padding-left: 12px;
+  margin-left: 12px;
+  color: white;
+  font-size: 40px;
+  min-height: 35px;
+  margin-top: 15px;
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+}
+.aboutmeinfo{
+  padding-left: 12px;
+  margin-left: 12px%;
+  color: white;
+  /* min-height: 25px; */
+  text-align: left;
+  margin-top: 15px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.signin_form{
+  padding-left: 12px;
+
+  font-family: 'Krona One',san-serif;
+  font-size: 10px;
+  color: white;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.profilepic{
+  margin-left: 12px;
+  float:right;
+  box-shadow: 2px 2px 2px grey;
+  border-radius: 10%;
+  border: 2px white;
+  padding: 10;
+
+}
+input[type="text"]{
+  padding: 4px;
+  width: 350px;
+  min-width: 100px;
+  font-size: 15px;
+
+}
+#submit_email{
+  background-color: #4CAF50;
+  border-radius: 2px;
+  width: 100px;
+  margin-left: 12px;
+  font-family: 'Ubuntu',san-serif;
+  font-size: 15px;
+  color: white;
+  padding: 4px;
+  margin: 0;
+}
+.unlockscreen{
+  border: 2px white;
+
+}
+.followme{
+  text-align: right;
+  float: left;
+  padding-left: 60px;
+  font-family: 'Krona One',san-serif;
+  font-size: 60px;
+  color: white;
+}
+#topRow{
+  background: red;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(179,195,69,1) 0%, rgba(0,212,255,1) 100%);
+}
+.education{
+  font-size: 45px;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Krona One',sans-serif;
+}
+.box{
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 1px rgba(148,161,242,1);
+  margin: 12px;
+  padding: 12px 12px 12px 12px;
+  border-radius: 5px;
+}
+.nitc{
+  text-align: center;
+  align-items: center;
+}
+.twitter{
+  margin:  2px;
+  float: right;
+  margin-right: 25px;
+}
+.contactmefooter{
+  font-size: 15px;
+  margin: 0;
+  color: white;
+  font-family: 'Ubuntu',sans-serif;
+}
+/* mobile view */
+@media screen and (max-width: 680px){
+  nav.topnav li:not(:nth-child(1)){
+    display: none;
+  }
+  nav.topnav ul li.dropdown{
+    display: block;
+    float: right;
+  }
+  nav.responsive ul{
+    position: relative;
+  }
+  nav.responsive ul li.dropdown{
+    position : absolute;
+    top : 0;
+    right : 0;
+  }
+  nav.responsive ul li{
+    display: inline;
+    float : none;
+
+  }
+  nav.responsive ul li a{
+    display: block;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    min-height: 20px;
+    font-size:16px;
+    font-family: 'Krona One', sans-serif;
+    padding: 10px;
+    color: #666;
+  }
+  nav.responsive ul li a:hover{
+    background-color: grey;
+    color: white;
+  }
+  .col-4{
+    width:100%;
+    margin:0;
+  }
+  .box{
+    display: block;
+  }
+  .profilepic{
+    float:left;
+  }
+
+}
